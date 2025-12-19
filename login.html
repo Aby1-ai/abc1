@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f5f5f5;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background: #e60023;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* POPUP */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-box {
+            background: white;
+            padding: 25px;
+            width: 300px;
+            border-radius: 12px;
+        }
+
+        .popup-box input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .back-link {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="openLogin()">Login</button>
+    <button onclick="openSignup()">Sign Up</button>
+
+    <!-- LOGIN POPUP -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-box">
+            <h3>Login</h3>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button onclick="closeLogin()">Login</button>
+            <div class="back-link" onclick="closeLogin()">← Go Back</div>
+        </div>
+    </div>
+
+    <!-- SIGNUP POPUP -->
+    <div id="signupPopup" class="popup">
+        <div class="popup-box">
+            <h3>Sign Up</h3>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button onclick="closeSignup()">Sign Up</button>
+            <div class="back-link" onclick="closeSignup()">← Go Back</div>
+        </div>
+    </div>
+
+<script>
+    const loginPopup = document.getElementById("loginPopup");
+    const signupPopup = document.getElementById("signupPopup");
+
+    function openLogin() {
+        loginPopup.style.display = "flex";
+    }
+
+    function openSignup() {
+        signupPopup.style.display = "flex";
+    }
+
+    function closeLogin() {
+        loginPopup.style.display = "none";
+    }
+
+    function closeSignup() {
+        signupPopup.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
