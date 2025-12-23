@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <!-- Landing Card -->
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Please login to continue</p>
+        <button onclick="openLogin()">Login</button>
+    </div>
+
+    <!-- LOGIN POPUP -->
+    <div id="loginPopup" class="popup" onclick="closeLogin(event)">
+        <div class="popup-box" onclick="event.stopPropagation()">
+            <h3>Login</h3>
+
+            <form onsubmit="loginUser(event)">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+
+                <div id="loginError" class="error"></div>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <div class="back-link" onclick="closeLogin()">← Go Back</div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
