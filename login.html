@@ -13,6 +13,7 @@
         <h1>Welcome</h1>
         <p>Please login to continue</p>
         <button onclick="openLogin()">Login</button>
+        <button onclick="openSignup()">Sign Up</button>
     </div>
 
     <!-- LOGIN POPUP -->
@@ -20,16 +21,33 @@
         <div class="popup-box" onclick="event.stopPropagation()">
             <h3>Login</h3>
 
-            <form onsubmit="loginUser(event)">
+            <form>
                 <input type="email" id="loginEmail" placeholder="Email" required>
                 <input type="password" id="loginPassword" placeholder="Password" required>
 
                 <div id="loginError" class="error"></div>
 
-                <button type="submit">Login</button>
+                <button type="button" onclick="loginUser()">Login</button>
             </form>
 
             <div class="back-link" onclick="closeLogin()">← Go Back</div>
+        </div>
+    </div>
+        <!-- SIGNUP POPUP -->
+    <div id="signupPopup" class="popup" onclick="closeSignup(event)">
+        <div class="popup-box">
+            <h3>Sign Up</h3>
+            <form>
+                <input type="text" id="signupName" placeholder="Full Name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+
+                <div id="signupError" class="error"></div>
+
+                <button type="button" onclick="signupUser()">Sign Up</button>
+            </form>
+
+            <div class="back-link" onclick="closeSignup()">← Go Back</div>
         </div>
     </div>
 
