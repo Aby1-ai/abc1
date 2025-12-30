@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Nightscape | Login</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
-    <!-- Landing Card -->
+    <!-- BACKGROUND OVERLAY -->
+    <div class="login-bg"></div>
+
+    <!-- LANDING -->
     <div class="container">
-        <h1>Welcome</h1>
-        <p>Please login to continue</p>
-        <button onclick="openLogin()">Login</button>
+        <h1>Nightscape</h1>
+        <p>Enter the world of speed & aesthetics</p>
+
+        <div class="action-buttons">
+            <button onclick="openLogin()">Login</button>
+            <button class="secondary" onclick="openSignup()">Sign Up</button>
+        </div>
     </div>
 
     <!-- LOGIN POPUP -->
@@ -20,16 +27,31 @@
         <div class="popup-box" onclick="event.stopPropagation()">
             <h3>Login</h3>
 
-            <form onsubmit="loginUser(event)">
-                <input type="email" id="loginEmail" placeholder="Email" required>
-                <input type="password" id="loginPassword" placeholder="Password" required>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
 
-                <div id="loginError" class="error"></div>
+            <div id="loginError" class="error"></div>
 
-                <button type="submit">Login</button>
-            </form>
+            <button onclick="loginUser()">Enter</button>
 
-            <div class="back-link" onclick="closeLogin()">← Go Back</div>
+            <div class="back-link" onclick="closeLogin()">← Back</div>
+        </div>
+    </div>
+
+    <!-- SIGNUP POPUP -->
+    <div id="signupPopup" class="popup" onclick="closeSignup(event)">
+        <div class="popup-box" onclick="event.stopPropagation()">
+            <h3>Create Account</h3>
+
+            <input type="text" id="signupName" placeholder="Full Name">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+
+            <div id="signupError" class="error"></div>
+
+            <button onclick="signupUser()">Sign Up</button>
+
+            <div class="back-link" onclick="closeSignup()">← Back</div>
         </div>
     </div>
 

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: #0b0b0f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* TOP BAR */
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: #000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.topbar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+}
+
+.profile {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* FEED GRID */
+.feed {
+    column-count: 4;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img,
+.card video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay button {
+    background: red;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}

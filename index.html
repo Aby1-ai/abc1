@@ -6,24 +6,33 @@
 
     <title>Nightscape</title>
 
-    <link rel="stylesheet" href="C:\Users\HP\OneDrive\Desktop\abc\css\web css.css">
-    <link rel="stylesheet" href="C:\Users\HP\OneDrive\Desktop\abc\js\web js.js">
+    <link rel="stylesheet" href="css/web_css.css">
+    <script src="js/web_js.js" defer></script>
 </head>
 <body>
+    
+    <!-- LOADING SCREEN -->
+<div id="loader">
+    <div class="loader-logo">N</div>
+</div>
 
+
+    <!-- NAVIGATION -->
     <nav class="navigation">
         <div class="logo">Nightscape</div>
         <div class="nav-links">
             <a href="#" class="active">Home</a>
             <a href="login.html">Login</a>
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
+
+
         </div>
     </nav>
 
-
+    <!-- HERO -->
     <section class="hero">
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="C:\Users\HP\OneDrive\Desktop\abc\media\f1 h.mp4" type="video/mp4">
+            <source src="media/f1-h.mp4" type="video/mp4">
         </video>
 
         <div class="hero-overlay"></div>
@@ -35,20 +44,58 @@
         </div>
     </section>
 
-    <!-- CONTENT PLACEHOLDER -->
-    <section class="content">
-        <h2>Discover Motor Sports</h2>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+    <div class="about-container">
+        <h2>About Nightscape</h2>
+        <div class="section-divider"></div>
+
         <p>
-            Explore breathtaking visuals, racing culture,
-            and high-octane inspiration curated for speed lovers.
+            Nightscape is a visual platform inspired by the raw energy of motor sports.
+            From Formula racing to track-day culture, Nightscape is built for those
+            who feel speed, motion, and design as one experience.
         </p>
+
+        <p>
+            Discover, save, and explore high-octane visuals curated for racing
+            enthusiasts and aesthetic lovers alike.
+        </p>
+    </div>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Nightscape. All rights reserved.</p>
-    </footer>
 
-    <script src="js/script.js"></script>
+    <!-- FEATURES / VALUE PROPS -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>High-Octane Visuals</h3>
+            <p>Curated racing imagery focused on speed, motion, and atmosphere.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Built for Enthusiasts</h3>
+            <p>A platform designed for those who live and breathe motor sports.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Aesthetic First</h3>
+            <p>Minimal UI with maximum visual impact, inspired by night racing culture.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    <div class="footer-content">
+        <p class="footer-brand">© 2025 Nightscape. All rights reserved.</p>
+
+        <div class="footer-contact">
+            <span>Contact:</span>
+            <a href="https://github.com/Aby1-ai/abc1" target="_blank">
+                GitHub 
+            </a>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
