@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         heroText.style.transform = "translate(-50%, -50%)";
     }, 300);
 });
-<<<<<<< HEAD
 
 // Loading Screen
 window.addEventListener("load", () => {
@@ -24,5 +23,3 @@ window.addEventListener("load", () => {
     }, 1200); // loader stays briefly for effect
 });
 
-=======
->>>>>>> a10250271d0bf420b386e072d7777a838bc5ae69
