@@ -8,3 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
         heroText.style.transform = "translate(-50%, -50%)";
     }, 300);
 });
+
+// Loading Screen
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.transition = "opacity 0.6s ease";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 600);
+    }, 1200); // loader stays briefly for effect
+});
+
