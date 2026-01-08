@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F1 | Nightscape</title>
+    <link rel="stylesheet" href="../css/pin.css">
+</head>
+<body>
+
+<!-- PIN PAGE -->
+<div class="pin-page">
+
+    <!-- LEFT: MAIN MEDIA -->
+    <div class="pin-left">
+        <div class="pin-media">
+            <img src="../media/f1/f1-2.jpg" alt="Formula 1">
+        </div>
+    </div>
+
+    <!-- RIGHT: ACTIONS + COMMENTS -->
+    <div class="pin-right">
+
+        <div class="pin-actions">
+            <button onclick="likePin()">❤️</button>
+            <button onclick="savePin()">📌</button>
+            <button onclick="sharePin()">🔗</button>
+            <button class="save-btn">Save</button>
+        </div>
+
+        <div class="pin-comments">
+            <h3>Comments</h3>
+
+            <div id="commentList"></div>
+
+            <input type="text" id="commentInput" placeholder="Add a comment">
+            <button onclick="addComment()">Post</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- RELATED SECTION -->
+<h2 class="related-title">More like this</h2>
+
+<div class="related-grid">
+    <img src="../media/f1/f1-18.jpg">
+    <img src="../media/f1/f1-6.jpg">
+    <img src="../media/f1/f1-5.jpg">
+    <img src="../media/f1/f1-14.jpg">
+    <img src="../media/f1/f1-19.jpg">
+    <img src="../media/f1/f1-10.jpg">
+</div>
+
+<script src="../js/pin.js"></script>
+</body>
+</html>

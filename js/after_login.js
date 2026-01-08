@@ -5,13 +5,13 @@ document.querySelectorAll(".overlay button").forEach(btn => {
 });
 function openPin(category) {
     if (category === "f1") {
-        window.location.href = "f1.html";
+        window.location.href = "html-f1/f1.html";
     } else if (category === "motogp") {
-        window.location.href = "motogp.html";
+        window.location.href = "html-motogp/motogp.html";
     } else if (category === "nascar") {
-        window.location.href = "nascar.html";
+        window.location.href = "html-nascar/nascar.html";
     } else if (category === "leman") {
-        window.location.href = "leman24h.html";
+        window.location.href = "html-leman24h/leman24h.html";
     }
 }
 
