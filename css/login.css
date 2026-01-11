@@ -1,0 +1,174 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* VIDEO BACKGROUND */
+.login-video-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.login-video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.login-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at top, rgba(255,76,76,0.2), transparent 60%),
+        rgba(0, 0, 0, 0.65);
+}
+
+/* LANDING CARD */
+.container {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(16px);
+    padding: 3rem 3.2rem;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    width: 360px;
+    z-index: 2;
+}
+
+.container h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.container p {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    padding: 0.7rem 1.8rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    background: #ff4c4c;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,76,76,0.4);
+}
+
+button.secondary {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.35);
+}
+
+/* POPUP OVERLAY */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* POPUP BOX */
+.popup-box {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(18px);
+    padding: 2.5rem;
+    width: 320px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.18);
+    animation: popupFade 0.35s ease;
+}
+
+.popup-box h3 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* INPUTS */
+.popup-box input {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    margin: 0.7rem 0;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.18);
+    color: white;
+}
+
+.popup-box input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.popup-box input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #ff4c4c;
+}
+
+/* ERROR */
+.error {
+    font-size: 0.8rem;
+    color: #ff6b6b;
+    margin-top: 0.4rem;
+}
+
+/* BACK LINK */
+.back-link {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+/* ANIMATION */
+@keyframes popupFade {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

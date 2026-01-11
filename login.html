@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nightscape | Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <!-- VIDEO BACKGROUND -->
+    <div class="login-video-wrapper">
+    <video autoplay muted loop playsinline>
+        <source src="media/motogp/afterlogin.mp4" type="video/mp4">
+    </video>
+    <div class="login-overlay"></div>
+</div>
+
+    <!-- LANDING CARD -->
+    <div class="container">
+        <h1>Nightscape</h1>
+        <p>Enter the world of speed & aesthetics</p>
+
+        <div class="action-buttons">
+            <button onclick="openLogin()">Login</button>
+            <button class="secondary" onclick="openSignup()">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- LOGIN POPUP -->
+    <div id="loginPopup" class="popup" onclick="closeLogin(event)">
+        <div class="popup-box" onclick="event.stopPropagation()">
+            <h3>Login</h3>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <div id="loginError" class="error"></div>
+
+            <button onclick="loginUser()">Enter</button>
+
+            <div class="back-link" onclick="closeLogin()">← Back</div>
+        </div>
+    </div>
+
+    <!-- SIGNUP POPUP -->
+    <div id="signupPopup" class="popup" onclick="closeSignup(event)">
+        <div class="popup-box" onclick="event.stopPropagation()">
+            <h3>Create Account</h3>
+
+            <input type="text" id="signupName" placeholder="Full Name">
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPassword" placeholder="Password">
+
+            <div id="signupError" class="error"></div>
+
+            <button onclick="signupUser()">Sign Up</button>
+
+            <div class="back-link" onclick="closeSignup()">← Back</div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
