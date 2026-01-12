@@ -1,4 +1,3 @@
-//login
 document.addEventListener("DOMContentLoaded", () => {
 
     const loginPopup = document.getElementById("loginPopup");
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     window.loginUser = function () {
-
         const password = loginPassword.value.trim();
 
         if (password.length < 6) {
@@ -30,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "after_login.html";
     };
 
-//signup
+    // SIGNUP
     const signupPopup = document.getElementById("signupPopup");
     const signupName = document.getElementById("signupName");
     const signupEmail = document.getElementById("signupEmail");
@@ -66,6 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
         signupError.textContent = "";
         alert("Signup successful! Please login.");
         closeSignup();
-        openLogin(); // open login after signup
+        openLogin();
     };
 });
