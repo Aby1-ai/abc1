@@ -33,34 +33,20 @@ body {
 
 /* FEED GRID */
 .feed {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cards side by side */
-    gap: 25px;
-
-    padding: 30px;
-    height: calc(100vh - 80px); /* full screen minus topbar */
-    box-sizing: border-box;
+    column-count: 4;
+    column-gap: 15px;
+    padding: 20px;
 }
-
-
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* keeps logos clean */
-}
-
 
 .card {
     position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    border-radius: 15px;
     overflow: hidden;
-    background: #000;
 }
 
-
-.card img
+.card img,
 .card video {
     width: 100%;
     border-radius: 15px;
