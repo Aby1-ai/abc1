@@ -92,3 +92,23 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
+
+.page-back {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
+  border-radius: 50%;
+  z-index: 9999;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.page-back:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateX(-3px);
+}

@@ -51,3 +51,12 @@ function savePin() {
 function sharePin() {
     alert("Link copied 🔗");
 }
+
+function goBack() {
+  if (document.referrer !== "") {
+    history.back();
+  } else {
+    window.location.href = "after_login.html";
+    // fallback if no history
+  }
+}

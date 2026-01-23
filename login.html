@@ -9,6 +9,7 @@
 
 <body>
 
+    <div class="page-back" onclick="goBack()">←</div>
     <!-- VIDEO BACKGROUND -->
     <div class="login-video-wrapper">
     <video autoplay muted loop playsinline>
@@ -33,8 +34,8 @@
         <div class="popup-box" onclick="event.stopPropagation()">
             <h3>Login</h3>
 
-            <input type="email" id="loginEmail" placeholder="Email">
-            <input type="password" id="loginPassword" placeholder="Password">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
 
             <div id="loginError" class="error"></div>
 
@@ -49,9 +50,9 @@
         <div class="popup-box" onclick="event.stopPropagation()">
             <h3>Create Account</h3>
 
-            <input type="text" id="signupName" placeholder="Full Name">
-            <input type="email" id="signupEmail" placeholder="Email">
-            <input type="password" id="signupPassword" placeholder="Password">
+            <input type="text" id="signupName" placeholder="Full Name" required>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
 
             <div id="signupError" class="error"></div>
 
