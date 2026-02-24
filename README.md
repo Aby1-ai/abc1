@@ -100,7 +100,7 @@ Future improvements may include backend authentication, secure session handling,
 
 ## Academic Context
 
-Nightscape was developed as part of the M.Sc Cyber Security (Web Design and Development – CSE5009) laboratory coursework at Amity University Bengaluru (2025–2026).
+Nightscape was developed as part of the M.Sc Cyber Security (Web Design and Development) laboratory coursework at Amity University Bengaluru (2025–2026).
 
 The project demonstrates practical implementation of frontend development principles, UI structuring, modular architecture, and collaborative version-controlled development.
 
