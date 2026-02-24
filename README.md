@@ -59,7 +59,7 @@ This structured organization helps reduce file congestion and improves maintaina
 
 - HTML5 for structural design  
 - CSS3 for layout styling and responsiveness  
-- Vanilla JavaScript for interactivity and dynamic behavior  
+- JavaScript for interactivity and dynamic behavior  
 - Git and GitHub for version control and collaboration  
 - GitHub Pages for deployment  
 
